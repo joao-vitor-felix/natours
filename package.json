@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "format": "prettier --write \"sass/**/*.scss\" \"./**/*.html\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/joao-vitor-felix/natours-project#readme",
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "prettier": "^2.8.8"
   }
 }

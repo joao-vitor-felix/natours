@@ -10,10 +10,12 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
     &::after {
@@ -22,8 +24,10 @@
     }
   }
 
-  &:active {
-    transform: translateY(-1px);
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
 
@@ -68,8 +72,8 @@
       color: $color-primary;
       display: inline-block;
       text-decoration: none;
-      border-bottom: 1px solid $color-primary;
-      padding: 3px;
+      border-bottom: 0.1rem solid $color-primary;
+      padding: 0.3rem;
       transition: all 0.2s;
     }
 
@@ -77,7 +81,7 @@
       background-color: $color-primary;
       color: $color-white;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-      transform: translateY(-2px);
+      transform: translateY(-0.2rem);
     }
 
     &:active {
